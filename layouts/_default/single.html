@@ -1,0 +1,14 @@
+{{ define "header" }}
+    {{ partial "partials/header.html" . }}
+{{ end }}
+
+{{ define "title" }}
+{{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<main>
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+</main>
+{{ end }}
+
