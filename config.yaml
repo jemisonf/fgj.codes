@@ -1,4 +1,4 @@
-baseURL: 'http://example.org/'
+baseURL: "https://stupefied-lichterman-24cfaa.netlify.app"
 languageCode: 'en-us'
 title: 'fgj.codes'
 params:
