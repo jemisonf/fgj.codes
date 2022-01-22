@@ -1,6 +1,8 @@
 ---
 title: Faster, Smaller, and More Secure Docker Builds
 date: 2021-09-26
+aliases:
+- /2021/09/26/better-docker-builds.html
 ---
 
 For this post, I'd like to highlight some Docker features and techniques that are useful but often left out of entry level tutorials, or that you may have missed if you learned Docker more than a couple years ago and haven't closely followed the latest releases. I'm using Docker Desktop 20.10.8 in this post but as long as you're within a couple major versions of that I wouldn't expect any compatibility issues.

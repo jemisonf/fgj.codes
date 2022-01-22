@@ -2,6 +2,8 @@
 layout: post
 title: How New Relic Uses Argo Workflows
 date: 2021-01-03
+aliases:
+ - /2021/01/23/argo-workflows-presentation.html
 ---
 
 Here's the recording, hosted on Youtube. Our presentation starts at 32:11.
