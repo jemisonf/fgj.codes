@@ -37,6 +37,7 @@ body {
     grid-template-columns: 1fr 600px 1fr;
     grid-template-rows: 50px 1fr;
     padding: 10px;
+    line-height: 1.25;
 }
 
 main {
@@ -78,4 +79,10 @@ li code, p code {
        box-sizing: border-box;
        max-width: 90vw;
    }
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
