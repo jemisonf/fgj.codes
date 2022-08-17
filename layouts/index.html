@@ -9,7 +9,7 @@
             </a>
             <p>Recent:</p>
             <ul>
-                {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
+                {{ range ( where .Site.RegularPages "Type" "posts" | first 10 ) }}
                     <li><a href="{{ .Permalink }}">{{ .Title }}</a> &dash; <em>{{ .Date.Format "1/2/2006"}} </em></li>
                 {{ end }}
             </ul>
