@@ -8,10 +8,10 @@ params:
   dateformNumTime: "2006-01-02 15:04 -0700"
 
 menu:
-  menu.main:
-    name: "Projects"
-    url: "projects/"
-    weight: 10
+  main:
+    - name: "Projects"
+      url: "projects/"
+      weight: 10
 
 markup:
   highlight:

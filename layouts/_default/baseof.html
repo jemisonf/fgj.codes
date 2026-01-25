@@ -7,7 +7,7 @@
       {{ .Site.Title }}
     {{ end }}</title>
     {{ $options := (dict "targetPath" "stylesheet.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $style := resources.Get "sass/stylesheet.scss" | resources.ToCSS $options | resources.Fingerprint }}
+    {{ $style := resources.Get "sass/stylesheet.scss" | css.Sass $options | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ template "_internal/twitter_cards.html" . }}
