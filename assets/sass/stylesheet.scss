@@ -1,10 +1,44 @@
+// Self-hosted Charter, see static/fonts/charter-license.txt
+@font-face {
+    font-family: 'Charter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/charter_regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Charter';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/charter_italic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Charter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/charter_bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Charter';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/charter_bold_italic.woff2') format('woff2');
+}
+
+:root {
+    --primary: #0054AD;
+    --accent: #f5f7fa;
+}
 body {
     font-size: 18px;
-    font-family: 'Palatino', serif;
+    font-family: 'Charter', serif;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Gill Sans', sans-serif;
-    color: #043F7D;
+    font-family: 'Fjalla One', 'Gill Sans', sans-serif;
+    color: var(--primary);
 }
 
 h2, h3, h4 {
@@ -12,7 +46,7 @@ h2, h3, h4 {
 }
 
 a {
-    color: #043F7D;
+    color: var(--primary);
 }
 
 li {
@@ -22,8 +56,9 @@ li {
 .header h1 {
     font-weight: 400;
     color: white;
-    background-color: #043F7D;
+    background-color: var(--primary);
     padding: 10px 20px;
+    font-size: 28px;
 }
 
 .header {
@@ -37,7 +72,7 @@ body {
     grid-template-columns: 1fr 600px 1fr;
     grid-template-rows: 50px 1fr;
     padding: 10px;
-    line-height: 1.25;
+    line-height: 1.5;
 }
 
 main {
@@ -46,21 +81,22 @@ main {
     grid-row: 2
 }
 
-main.index {
-    grid-template-rows: 1fr;
-}
+// main.index {
+//     grid-template-rows: 1fr;
+// }
 
 pre {
     padding: 10px;
     overflow: scroll;
     border-radius: .1em;
     border: 1px solid #ebebeb;
+    background-color: var(--accent) !important;
     max-width: 100%;
     font-size: 0.8em;
 }
 
 li code, p code {
-    background-color: #f8f8f8;
+    background-color: white;
     font-size: 0.8em;
     padding: 0.2em;
 }
@@ -93,8 +129,11 @@ img {
 blockquote {
     margin: 0;
     padding: 2px 20px;
-    border-left: 4px solid #043F7D;
-    background-color: #edf0f8;
+    border-left: 4px solid var(--primary);
+    background-color: var(--accent);
+    border-right: 0.5px solid color-mix(in srgb, var(--accent) 80%, var(--primary) 20%);
+    border-bottom: 0.5px solid color-mix(in srgb, var(--accent) 80%, var(--primary) 20%);
+    border-top: 0.5px solid color-mix(in srgb, var(--accent) 80%, var(--primary) 20%);
 }
 
 figcaption {
@@ -104,6 +143,6 @@ figcaption {
 }
 
 img {
-    box-shadow: 10px 10px 0px 0px #043F7D;
-    border: 2px solid #043F7D;
+    border: 2px solid var(--accent);
+    border-radius: 4px;
 }

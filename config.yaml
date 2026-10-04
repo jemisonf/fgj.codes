@@ -1,6 +1,6 @@
 baseURL: "https://fgj.codes"
-languageCode: 'en-us'
-title: 'fgj.codes'
+languageCode: "en-us"
+title: "fgj.codes"
 params:
   dateform: "Jan 2, 2006"
   dateformShort: "Jan 2"
@@ -15,4 +15,4 @@ menu:
 
 markup:
   highlight:
-    style: tango
+    style: github

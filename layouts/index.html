@@ -1,22 +1,18 @@
 {{ define "main" }}
+    <header class="header">
+        <h1>{{.Title}}</h1>
+    </header>
     <main class="index">
-        <header class="homepage header">
-            <h1>{{.Title}}</h1>
-        </header>
         <section>
-            <a href="/posts">
-                <h2>Posts</h2>
-            </a>
-            <p>Recent:</p>
+            <h2>Writing</h2>
             <ul>
                 {{ range ( where .Site.RegularPages "Type" "posts" | first 10 ) }}
                     <li><a href="{{ .Permalink }}">{{ .Title }}</a> &dash; <em>{{ .Date.Format "1/2/2006"}} </em></li>
                 {{ end }}
             </ul>
             <a href="/about">
-                <h2>About</h2>
+                <p>About me</p>
             </a>
         </section>
     </main>
-    <a rel="me" href="https://hachyderm.io/@fischer" hidden="true">Mastodon</a>
 {{ end }}
