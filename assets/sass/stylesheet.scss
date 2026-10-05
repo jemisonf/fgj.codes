@@ -1,6 +1,3 @@
-// Self-hosted fonts, see static/fonts/*-license.txt.
-// local() uses the Charter that ships with macOS/iOS; `optional` never swaps
-// fonts mid-read (falls back for that page view if the font is late).
 @font-face {
     font-family: 'Charter';
     font-style: normal;
@@ -46,7 +43,8 @@ body {
     font-family: 'Charter', serif;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fjalla One', 'Gill Sans', sans-serif;
+    font-family: 'Fjalla One', 'DIN Condensed', 'Bahnschrift', sans-serif;
+    font-stretch: semi-condensed;
     color: var(--primary);
 }
 
